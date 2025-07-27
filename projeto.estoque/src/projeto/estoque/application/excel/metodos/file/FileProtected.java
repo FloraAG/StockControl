@@ -20,7 +20,7 @@ public class FileProtected {
 		try(POIFSFileSystem fs = new POIFSFileSystem()){
 			final EncryptionInfo info = new EncryptionInfo(EncryptionMode.agile);
 			final Encryptor encryptor = info.getEncryptor();
-			encryptor.confirmPassword("rkIX)-Tw");
+			encryptor.confirmPassword("Definir a senha");
 
 			try (OPCPackage opc = OPCPackage.open(planilha, PackageAccess.READ_WRITE);
 					OutputStream os = encryptor.getDataStream(fs)) {
