@@ -1,0 +1,107 @@
+/*----------Plano de Fundo----------*/
+.fundo-geral{
+	-fx-background-image: url("images/fundo-principal.png");
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-background-size: contain;
+	-fx-background-color: white;
+}
+
+/*----------Fonte-Texto----------*/
+
+.fonte-geral.bold{
+	-fx-font-weight: bold;
+}
+
+/*----------Fundo-Objetos e Formas----------*/
+.fundo-obj-geral{
+	-fx-background-radius: 15px;
+	-fx-padding: 5, 5, 5, 5;
+}
+
+.fundo-obj-geral.borda{
+	-fx-border-radius: 15px;
+	-fx-border-color: black;
+	-fx-border-width: 2px;
+}
+
+.fundo-obj-geral.button:hover{
+	-fx-cursor: hand;
+}
+
+.fundo-obj-geral.greenI{
+	-fx-background-color: rgb(110, 190, 83);
+}
+
+.fundo-obj-geral.greenII{
+	-fx-background-color: rgb(171, 232, 150);
+}
+
+.fundo-obj-geral.white{
+	-fx-background-color: rgba(255, 255, 255, 0.25);
+}
+
+.fundo-obj-geral.white-full{
+	-fx-background-color: rgb(255, 255, 255);
+}
+
+.fundo-ret-geral{
+	-fx-arc-width: 15px;
+	-fx-stroke: black;
+	-fx-stroke-width: 3px;
+	-fx-arc-width: 30px;   
+    -fx-arc-height: 30px; 
+}
+
+.fundo-ret-geral.ret-green{
+	-fx-fill: rgb(110, 190, 83);
+}
+
+.fundo-ret-geral.ret-white{
+	-fx-fill: rgba(255, 255, 255);
+}
+
+/*----------CheckBox----------*/
+.check-box .box{
+	-fx-background-color: white;
+	-fx-background-radius: 100%;
+	-fx-border-radius: 100%;
+	-fx-border-color: black;
+	-fx-border-width: 2px;		
+}
+
+.check-box:selected .box{
+	-fx-background-color: rgb(110, 190, 83); 		
+}
+
+.check-box .mark{
+ 	-fx-background-color: white;
+}
+
+/*----------TableView----------*/
+.table-view .column-header,
+.table-view .column-header .label {
+    -fx-background-color: rgb(110, 190, 83);
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-border-color: transparent; 
+    -fx-padding: 8 12 8 12;
+    -fx-alignment: center;
+    -fx-wrap-text: true;
+}
+
+.table-view .table-row-cell {
+    -fx-background-color: white;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: rgb(153, 193, 241);
+}
