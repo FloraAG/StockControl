@@ -199,7 +199,7 @@ public class FileUsuario implements FileCRUD<Usuario> {
 		cell.setCellValue("ADMINISTRADOR");
 		//Coluna 2
 		cell = linha.createCell(2);
-		cell.setCellValue(CriptografiaSenha.criptografarSenha("rkIX)-Tw"));
+		cell.setCellValue(CriptografiaSenha.criptografarSenha("Definir a senha"));
 		//Coluna 3
 		cell = linha.createCell(3);
 		cell.setBlank();
