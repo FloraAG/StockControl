@@ -12,9 +12,9 @@
 * Armazenamento de logs de uso dos itens cadastrados;
 * **Atenção**: Não edite as planilhas manualmente para evitar erros.
 
-##Modo de Uso
+## Modo de Uso
 
-###Instalação
+### Instalação
    * **Linux**
    1. Abra o terminal na pasta com o instalador .deb (stockcontrol_1.0_amd64.deb);
    2. Na linha de comando, digite: sudo apt install ./stockcontrol_1.0_amd64.deb;
@@ -53,7 +53,7 @@
    * A Seção Registro de Uso proverá duas tabelas com o uso dos itens declarados do próprio usuário e o uso geral. Essa seção também permitirá ao usuário selecionar o mês/ano para deletar os registros do período selecionado;
    * A Seção Administração poderá ser selecionado caso o usuário clique em "Administração", no campo superior direito. Veja a descrição da Seção Administração em **"Primeira inicialização"**. Para regressar na Seção Estoque, o usuário precisará clicar em "Estoque", no campo superior direito, ao lado de seu nome.
    
-### 2. Permissão de Usuário
+#### 2. Permissão de Usuário
 (Todos os usuários cadastrados, mesmo sem permissão administrador)
 
 1. Inicie o programa e faça o login;
