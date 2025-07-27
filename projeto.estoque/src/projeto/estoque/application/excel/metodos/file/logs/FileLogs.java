@@ -174,7 +174,7 @@ public class FileLogs implements FileCRUD<Logs>{
 		try {
 			//Variáveis Execel
 			final FileInputStream fis = new FileInputStream("planilhas/Logs.xlsx");
-			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(fis, "rkIX)-Tw");
+			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(fis, "Definir a senha");
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			XSSFRow linha;
 			XSSFCell cell;
