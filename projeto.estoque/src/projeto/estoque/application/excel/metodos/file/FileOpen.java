@@ -38,11 +38,11 @@ public class FileOpen {
 	public static ListaWorkbook abrirFile(ListaWorkbook listaWorkbook) {
 		try {
 			final FileInputStream fis1 = new FileInputStream("planilhas/Usuários.xlsx");
-			listaWorkbook.setWorkbookUsuario((XSSFWorkbook) WorkbookFactory.create(fis1, "rkIX)-Tw"));
+			listaWorkbook.setWorkbookUsuario((XSSFWorkbook) WorkbookFactory.create(fis1, "Definir a senha"));
 			final FileInputStream fis2 = new FileInputStream("planilhas/Estoque.xlsx");
-			listaWorkbook.setWorkbookEstoque((XSSFWorkbook) WorkbookFactory.create(fis2, "rkIX)-Tw"));
+			listaWorkbook.setWorkbookEstoque((XSSFWorkbook) WorkbookFactory.create(fis2, "Definir a senha"));
 			final FileInputStream fis3 = new FileInputStream("planilhas/Logs.xlsx");
-			listaWorkbook.setWorkbookLogs((XSSFWorkbook) WorkbookFactory.create(fis3, "rkIX)-Tw"));
+			listaWorkbook.setWorkbookLogs((XSSFWorkbook) WorkbookFactory.create(fis3, "Definir a senha"));
 
 			fis1.close();
 			fis2.close();
