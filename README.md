@@ -1,6 +1,6 @@
-#StockControl
+# StockControl
 
-##Introdução
+## Introdução
 
 **StockControl** é uma interface que permite ao usuário a manipulação do estoque e usuários cadastrados através de planilhas excel. O programa possui as funcionalidades de:
 
@@ -25,7 +25,7 @@
    2. O instalador permitirá ao usuário escolher a pasta de instalação;
    3. Para executar o programa, abra-o com permissão de administrador.
 
-###Primeira Inicialização
+### Primeira Inicialização
 
 1. Inicie o programa com duplo clique. Serão criadas: a pasta "planilhas" e os arquivos excel "Estoque.xlsx", "Logs.xlsx" e "Usuários.xls";
 2. Na tela Login, digite "administrador" no campo usuário e a senha fornecida (entre em contato com o suporte para alteração da senha) no campo senha - essa será a mesma senha que abrirá as planilhas excel;
@@ -37,9 +37,9 @@
 4. Cadastre o primeiro usuário com permissão de administrador;
 5. Para retornar na tela Login, clique em SAIR na parte superior direita da tela,
 
-###Inicializações Seguintes
+### Inicializações Seguintes
 
-####1. Permissão de Administrador
+#### 1. Permissão de Administrador
 (Usuários com permissão de administrador)
 
 1. Inicie o programa e faça o login;
@@ -53,7 +53,7 @@
    * A Seção Registro de Uso proverá duas tabelas com o uso dos itens declarados do próprio usuário e o uso geral. Essa seção também permitirá ao usuário selecionar o mês/ano para deletar os registros do período selecionado;
    * A Seção Administração poderá ser selecionado caso o usuário clique em "Administração", no campo superior direito. Veja a descrição da Seção Administração em **"Primeira inicialização"**. Para regressar na Seção Estoque, o usuário precisará clicar em "Estoque", no campo superior direito, ao lado de seu nome.
    
-###2. Permissão de Usuário
+### 2. Permissão de Usuário
 (Todos os usuários cadastrados, mesmo sem permissão administrador)
 
 1. Inicie o programa e faça o login;
@@ -86,11 +86,11 @@
    * A Seção Registro de Uso proverá uma tabela - veja a seção permissão de administrador para detalhes complementares - com o uso dos itens declarados do usuário;
    * A Seção Perfil, que poderá ser selecionada quando o usuário clicar em seu nome. Nessa Seção, o usuário terá permissão de alterar seus dados pessoais.
    
-##Problemas Conhecidos
+## Problemas Conhecidos
 
 O programa não permite a redefinição da senha do administrador e não possui suporte para a edição direta das planilhas excel, afim de evitar a corrupção dos arquivos e o livre acesso (a senha deve ser modificada previamente a insatalação do programa pelo suporte).
 
-##Créditos
+## Créditos
 
 **Desenvolvimento**: Flora Aparecida Gomes de Queiros;
 **Ícone(programa)**: Flora Aparecida Gomes de Queiros;
