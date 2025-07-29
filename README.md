@@ -61,27 +61,30 @@
    * A Seção Home proverá duas tabelas com dados dos itens que estejam próximo do valor mínimo estipulado ou abaixo desse valor mínimo;
    * A Seção Consulta proverá uma tabela com as informações gerais dos itens cadastrados;
    * A Seção Declarar Uso proverá um menu com os itens cadastrados, devendo ser selecionado aquele com interesse de declarar uso. Campos com os dados principais do item aparecerão na tela, junto com o campo texto "Quantidade Utilizada". Para declarar o uso, o usuário deverá atentar-se à unidade de medida, declarando a quantidade utilizada na mesma unidade de medida do item, conforme os exemplos:
-   1. Item: Frasco Álcool Etílico
-      Unidade de Medida: frasco(1L)
-      Estoque Atual: 10 (frascos) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de frascos. 
+   1. Item: Frasco Álcool Etílico\
+      Unidade de Medida: frasco(1L)\
+      Estoque Atual: 10 (frascos) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de frascos.\
       Quantidade Utilizada: 0.05 (litro) - nesse exemplo hipotético, o usuário utilizou 50ml de um frasco de 1 litro de álcool etílico, dessa forma:
-                                             1 frasco  ------------ 1000ml
-                                                 x      ----------   50ml
-   2. Item: Caixa Caneta Esferográfica Azul
-      Unidade de Medida: caixa(100uni)
-      Estoque Atual: 5 (caixas) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de caixas. 
+      
+                                                           1 frasco  ------------ 1000ml
+                                                               x      ----------   50ml
+   3. Item: Caixa Caneta Esferográfica Azul\
+      Unidade de Medida: caixa(100uni)\
+      Estoque Atual: 5 (caixas) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de caixas.\
       Quantidade Utilizada: 0,10 (caixa) - nesse exemplo hipotético, o usuário utilizou 10 unidades de uma caixa de 100 unidades, dessa forma:
-                                             1 caixa  ------------ 100uni
-                                                 x      ---------   10uni                                           
-   3. Item: Frasco Álcool Etílico 1L
-      Unidade de Medida: litro
-      Estoque Atual: 10 (litros) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de litros. 
+
+                                                            1 caixa  ------------ 100uni
+                                                                x      ---------  10uni
+   4. Item: Frasco Álcool Etílico 1L\
+      Unidade de Medida: litro\
+      Estoque Atual: 10 (litros) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de litros.\
       Quantidade Utilizada: 0.05 (litro) - nesse exemplo hipotético, o usuário utilizou 50ml de um frasco de 1 litro de álcool etílico, dessa forma:
-                                             1 L  ------------ 1000ml
-                                              x    ----------   50ml
-   4. Item: Caixa Caneta Esferográfica Azul 100uni
-      Unidade de Medida: unidade
-      Estoque Atual: 500 (unidades) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade unitária do item. 
+      
+                                                             1 L  ------------ 1000ml
+                                                             x    ----------   50ml
+   5. Item: Caixa Caneta Esferográfica Azul 100uni\
+      Unidade de Medida: unidade\
+      Estoque Atual: 500 (unidades) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade unitária do item.\
       Quantidade Utilizada: 10 (unidades) - nesse exemplo hipotético, o usuário utilizou 10 unidades de uma caixa de 100 unidades, não havendo necessidade de conversão.
    * A Seção Registro de Uso proverá uma tabela - veja a seção permissão de administrador para detalhes complementares - com o uso dos itens declarados do usuário;
    * A Seção Perfil, que poderá ser selecionada quando o usuário clicar em seu nome. Nessa Seção, o usuário terá permissão de alterar seus dados pessoais.
@@ -92,14 +95,14 @@ O programa não permite a redefinição da senha do administrador e não possui 
 
 ## Créditos
 
-**Desenvolvimento**: Flora Aparecida Gomes de Queiros;
-**Ícone(programa)**: Flora Aparecida Gomes de Queiros;
-**Ícones**: Uicons designed by [Flaticon](https://www.flaticon.com/uicons).
-**Imagens**: 
-    Fundo Principal. Foto de Fayette Reynolds M.S., obtido em [Pexels](https://www.pexels.com/pt-br/foto/colorida-cheio-de-cor-ciencia-celula-11198503/)[modificada];
-        Fundo Secundário I. Foto de Dejavu Fry, obtido em [Pexels](https://www.pexels.com/pt-br/foto/flora-crescimento-aumento-floracao-12171685/)[modificada];
-    Fundo Secundário II. Foto de Susanne Jutzeler, suju-foto, obtido em [Pexels](https://www.pexels.com/pt-br/foto/campo-de-girassol-amarelo-foco-raso-sob-o-ceu-ensolarado-1169084/)[modificada];
-       Fundo Secundário III. Foto de Irina Iriser, obtido em [Pexels](https://www.pexels.com/pt-br/foto/foto-de-flores-em-close-up-2534524/)[modificada];
-    Fundo Secundário IV. Foto de Karen F., obtido em [Pexels](https://www.pexels.com/pt-br/foto/jardim-petalas-flor-rosa-9250754/)[modificada].
+**Desenvolvimento**: Flora Aparecida Gomes de Queiros;\
+**Ícone(programa)**: Flora Aparecida Gomes de Queiros;\
+**Ícones**: Uicons designed by [Flaticon](https://www.flaticon.com/uicons).\
+**Imagens**: \
+    Fundo Principal. Foto de Fayette Reynolds M.S., obtido em [Pexels](https://www.pexels.com/pt-br/foto/colorida-cheio-de-cor-ciencia-celula-11198503/) [modificada];\
+    Fundo Secundário I. Foto de Dejavu Fry, obtido em [Pexels](https://www.pexels.com/pt-br/foto/flora-crescimento-aumento-floracao-12171685/) [modificada];\
+    Fundo Secundário II. Foto de Susanne Jutzeler, suju-foto, obtido em [Pexels](https://www.pexels.com/pt-br/foto/campo-de-girassol-amarelo-foco-raso-sob-o-ceu-ensolarado-1169084/) [modificada];\
+    Fundo Secundário III. Foto de Irina Iriser, obtido em [Pexels](https://www.pexels.com/pt-br/foto/foto-de-flores-em-close-up-2534524/) [modificada];\
+    Fundo Secundário IV. Foto de Karen F., obtido em [Pexels](https://www.pexels.com/pt-br/foto/jardim-petalas-flor-rosa-9250754/) [modificada].
 
  
