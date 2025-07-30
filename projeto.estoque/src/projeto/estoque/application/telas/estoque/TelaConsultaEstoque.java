@@ -68,7 +68,7 @@ public class TelaConsultaEstoque {
 		TableColumn<Estoque, ArrayList<String>> columnPericulosidadeTipo = new TableColumn<>("Tipo");
 		columnPericulosidadeTipo.setPrefWidth(columnPericulosidadeTipo.getText().length() * 20);
 		columnPericulosidadeTipo.setCellValueFactory(new PropertyValueFactory<>("periculosidadeGeral"));
-		columnPericulosidadeTipo.setCellFactory(column -> new TableCell<Estoque, ArrayList<String>>(){
+		columnPericulosidadeTipo.setCellFactory(_ -> new TableCell<Estoque, ArrayList<String>>(){
 			@Override
 			protected void updateItem(ArrayList<String> item, boolean empty) {
 				super.updateItem(item, empty);
@@ -85,7 +85,7 @@ public class TelaConsultaEstoque {
 		columnPericulosidadeCategoria.setCellValueFactory(new PropertyValueFactory<>("periculosidadeEspecifica"));
 		columnPericulosidade.getColumns().add(columnPericulosidadeTipo);
 		columnPericulosidade.getColumns().add(columnPericulosidadeCategoria);
-		columnPericulosidadeCategoria.setCellFactory(column -> new TableCell<Estoque, ArrayList<String>>(){
+		columnPericulosidadeCategoria.setCellFactory(_ -> new TableCell<Estoque, ArrayList<String>>(){
 			@Override
 			protected void updateItem(ArrayList<String> item, boolean empty) {
 				super.updateItem(item, empty);
@@ -108,7 +108,7 @@ public class TelaConsultaEstoque {
 		TableColumn<Estoque, Double> columnQuantidadeMinima = new TableColumn<>("Estoque Mínimo");
 		columnQuantidadeMinima.setCellValueFactory(new PropertyValueFactory<>("quantidadeMinima"));
 		columnQuantidadeMinima.setPrefWidth(columnQuantidadeMinima.getText().length() * 10);
-		columnQuantidadeMinima.setCellFactory(numero -> new TableCell<Estoque, Double>(){
+		columnQuantidadeMinima.setCellFactory(_ -> new TableCell<Estoque, Double>(){
 			@Override
 			protected void updateItem(Double item, boolean empty) {
 				super.updateItem(item, empty);
@@ -123,7 +123,7 @@ public class TelaConsultaEstoque {
 		TableColumn<Estoque, Double> columnQuantidadeAtual = new TableColumn<>("Estoque Atual");
 		columnQuantidadeAtual.setCellValueFactory(new PropertyValueFactory<>("quantidadeAtual"));
 		columnQuantidadeAtual.setPrefWidth(columnQuantidadeAtual.getText().length() * 10);
-		columnQuantidadeAtual.setCellFactory(numero -> new TableCell<Estoque, Double>(){
+		columnQuantidadeAtual.setCellFactory(_ -> new TableCell<Estoque, Double>(){
 			@Override
 			protected void updateItem(Double item, boolean empty) {
 				super.updateItem(item, empty);

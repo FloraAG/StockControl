@@ -82,7 +82,7 @@ public class TelaPrincipalEstoque {
 			label.setStyle("-fx-cursor: hand;");
 		}
 
-		lblHome.setOnMouseClicked(e ->{
+		lblHome.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda", "white");
 				label.getStyleClass().add("greenI");
@@ -92,7 +92,7 @@ public class TelaPrincipalEstoque {
 			TelaHome.criarTelaHome(spSecundaria, listaGeral.getListaEstoque());
 		});
 
-		lblCadastro.setOnMouseClicked(e ->{
+		lblCadastro.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda", "white");
 				label.getStyleClass().add("greenI");
@@ -102,7 +102,7 @@ public class TelaPrincipalEstoque {
 			TelaCadastroEstoque.criarTelaCadastroEstoque(spSecundaria, listaGeral.getListaEstoque(), listaFiles.getfEstoque(), usuario);
 		});
 
-		lblConsulta.setOnMouseClicked(e ->{
+		lblConsulta.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda", "white");
 				label.getStyleClass().add("greenI");
@@ -112,7 +112,7 @@ public class TelaPrincipalEstoque {
 			TelaConsultaEstoque.criarTelaConsulta(spSecundaria, listaGeral.getListaEstoque());
 		});
 
-		lblAlteracao.setOnMouseClicked(e -> {
+		lblAlteracao.setOnMouseClicked(_ -> {
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda","white");
 				label.getStyleClass().add("greenI");
@@ -122,7 +122,7 @@ public class TelaPrincipalEstoque {
 			TelaAtualizarEstoque.criarTelaAtualizacao(spSecundaria, listaGeral.getListaEstoque(), listaFiles.getfEstoque(), usuario);
 		});
 
-		lblDeclararItens.setOnMouseClicked(e -> {
+		lblDeclararItens.setOnMouseClicked(_ -> {
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda","white");
 				label.getStyleClass().add("greenI");
@@ -134,7 +134,7 @@ public class TelaPrincipalEstoque {
 
 		});
 
-		lblLogs.setOnMouseClicked(e -> {
+		lblLogs.setOnMouseClicked(_ -> {
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda","white");
 				label.getStyleClass().add("greenI");

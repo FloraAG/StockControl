@@ -120,7 +120,7 @@ public class TelaHome {
 		//Quantidade Minima
 		TableColumn<Estoque, Double> columnQuantMinima = new TableColumn<>("Estoque Mínimo");
 		columnQuantMinima.setCellValueFactory(new PropertyValueFactory<>("quantidadeMinima"));
-		columnQuantMinima.setCellFactory(numero -> new TableCell<Estoque, Double>(){
+		columnQuantMinima.setCellFactory(_ -> new TableCell<Estoque, Double>(){
 			@Override
 			protected void updateItem(Double item, boolean empty) {
 				super.updateItem(item, empty);
@@ -135,7 +135,7 @@ public class TelaHome {
 		//Quantidade Atual
 		TableColumn<Estoque, Double> columnQuantAtual = new TableColumn<>("Estoque Atual");
 		columnQuantAtual.setCellValueFactory(new PropertyValueFactory<>("quantidadeAtual"));
-		columnQuantAtual.setCellFactory(numero -> new TableCell<Estoque, Double>(){
+		columnQuantAtual.setCellFactory(_ -> new TableCell<Estoque, Double>(){
 			@Override
 			protected void updateItem(Double item, boolean empty) {
 				super.updateItem(item, empty);

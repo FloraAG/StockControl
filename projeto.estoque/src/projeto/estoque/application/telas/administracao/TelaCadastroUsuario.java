@@ -95,7 +95,7 @@ public class TelaCadastroUsuario {
 		tfEmail.setPrefWidth(width * 0.5);
 		cbAdministrador.getStyleClass().addAll("fonte-geral", "check-box");
 		cbUsuario.getStyleClass().addAll("fonte-geral", "check-box");
-		cbAdministrador.setOnAction(e -> {
+		cbAdministrador.setOnAction(_ -> {
 			if(cbAdministrador.isSelected()) {
 				cbUsuario.setSelected(true);
 			} else {
@@ -107,16 +107,16 @@ public class TelaCadastroUsuario {
 		btCadastrar.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
 
 		/*----------Inserindo Actions----------*/
-		spSecundaria.setOnMouseClicked(e -> {
+		spSecundaria.setOnMouseClicked(_ -> {
 			lblSituacaoCadastro.setText("");
 		});
 		TextField[] listaFields = {tfNomeUsuario, pfSenhaI, pfSenhaII, tfOrientacao, tfTelefone, tfEmail};
 		for(TextField textField : listaFields) {
-			textField.setOnMouseClicked(e -> {
+			textField.setOnMouseClicked(_ -> {
 				lblSituacaoCadastro.setText("");
 			});
 		}
-		btLimpar.setOnAction(e -> {
+		btLimpar.setOnAction(_ -> {
 			tfNomeUsuario.setText("");
 			pfSenhaI.setText("");
 			pfSenhaII.setText("");
@@ -127,7 +127,7 @@ public class TelaCadastroUsuario {
 			cbUsuario.setSelected(false);
 			lblSituacaoCadastro.setText("Campos Limpos!");
 		});
-		btCadastrar.setOnAction(e ->{
+		btCadastrar.setOnAction(_ ->{
 			DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 			String data = LocalDateTime.now().format(formato);
 			Usuario usuarioCriado = new Usuario();

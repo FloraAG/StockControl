@@ -56,7 +56,7 @@ public class TelaPrincipalAdministracao {
 		for(Label label : vetorLabels) {
 			label.setStyle("-fx-cursor: hand;");
 		}
-		lblHome.setOnMouseClicked(e ->{
+		lblHome.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda", "white");
 				label.getStyleClass().add("greenI");
@@ -66,7 +66,7 @@ public class TelaPrincipalAdministracao {
 			TelaHome.criarTelaHome(spSecundaria, listaGeral.getListaEstoque());
 		});
 
-		lblCadastro.setOnMouseClicked(e ->{
+		lblCadastro.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda", "white");
 				label.getStyleClass().add("greenI");
@@ -76,7 +76,7 @@ public class TelaPrincipalAdministracao {
 			TelaCadastroUsuario.criarTelaCadastro(spSecundaria, listaGeral.getListaUsuario(), fileUsuario);
 		});
 
-		lblConsulta.setOnMouseClicked(e ->{
+		lblConsulta.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda", "white");
 				label.getStyleClass().add("greenI");
@@ -86,7 +86,7 @@ public class TelaPrincipalAdministracao {
 			TelaConsultaUsuarios.criarTelaConsultaUsuarios(spSecundaria, listaGeral.getListaUsuario());
 		});
 
-		lblAlteracao.setOnMouseClicked(e ->{
+		lblAlteracao.setOnMouseClicked(_ ->{
 			for(Label label : vetorLabels) {
 				label.getStyleClass().removeAll("borda","white");
 				label.getStyleClass().add("greenI");

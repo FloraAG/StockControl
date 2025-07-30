@@ -97,7 +97,7 @@ public class TelaPerfil {
 		spSecundaria.getChildren().addAll(limitesRetangulo, hBoxGeral);
 
 		//Inserindo Action
-		btAtualizar.setOnAction(e -> {
+		btAtualizar.setOnAction(_ -> {
 
 			if(tfNomeUsuario.getText().isBlank() || tfTelefone.getText().isBlank() || tfEmail.getText().isBlank()) {
 				lblSituacaoPerfil.setText("Campo(s) vazio(s)!");

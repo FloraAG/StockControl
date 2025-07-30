@@ -82,7 +82,7 @@ public class TelaPrincipal {
 		/*----------Inserindo Evento Label Cumprimento----------*/
 		if(!usuarioAux.getNomeUsuario().equals("ADMINISTRADOR")) {
 			lblCumprimento.setCursor(Cursor.HAND);
-			lblCumprimento.setOnMousePressed(e ->{
+			lblCumprimento.setOnMousePressed(_ ->{
 				spSecundaria.getChildren().clear();
 				spSecundaria.getChildren().add(retSecundario);
 				TelaPerfil.criarAreaPerfil(spSecundaria, listaGeral.getListaUsuario(), listaFiles.getfUsuario(), usuarioAux);
@@ -90,14 +90,14 @@ public class TelaPrincipal {
 		}
 
 		/*----------Inserindo Evento Label Sair----------*/
-		lblSair.setOnMousePressed(e ->{
+		lblSair.setOnMousePressed(_ ->{
 			spAnterior.getChildren().clear();
 			TelaLogin.criarTelaLogin(spAnterior, limitesTela);
 			telaAdministracao = false;
 		});
 
 		/*----------Inserindo Evento Label AdmEstoque----------*/
-		lblAdmEstoque.setOnMousePressed(e ->{
+		lblAdmEstoque.setOnMousePressed(_ ->{
 			telaAdministracao = !telaAdministracao;
 			spAnterior.getChildren().clear();
 			spPrincipal.getChildren().clear();

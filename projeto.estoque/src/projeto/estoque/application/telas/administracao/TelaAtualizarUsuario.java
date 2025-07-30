@@ -67,7 +67,7 @@ public class TelaAtualizarUsuario {
 		for(Usuario usuarioAux : listaUsuario) {
 			if(usuarioAux.getIdUsuario() != null && !usuarioAux.getIdUsuario().equals("0")) {
 				MenuItem miUsuario = new MenuItem(usuarioAux.getNomeUsuario());
-				miUsuario.setOnAction(e -> {mbtSelecao.setText(usuarioAux.getNomeUsuario());});
+				miUsuario.setOnAction(_ -> {mbtSelecao.setText(usuarioAux.getNomeUsuario());});
 				mbtSelecao.getItems().add(miUsuario);
 			}
 		}
@@ -113,7 +113,7 @@ public class TelaAtualizarUsuario {
 		tfEmail.setPrefWidth(width * 0.5);
 		cbAdministrador.getStyleClass().addAll("fonte-geral", "check-box");
 		cbUsuario.getStyleClass().addAll("fonte-geral", "check-box");
-		cbAdministrador.setOnAction(e -> {
+		cbAdministrador.setOnAction(_ -> {
 			if(cbAdministrador.isSelected()) {
 				cbUsuario.setSelected(true);
 			} else {
@@ -133,16 +133,16 @@ public class TelaAtualizarUsuario {
 		btAtualizar.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
 
 		/*----------Inserindo Actions----------*/
-		spSecundaria.setOnMouseClicked(e -> {
+		spSecundaria.setOnMouseClicked(_ -> {
 			lblSituacaoAtualizacao.setText("");
 		});
 		TextField[] listaFields = {tfNomeUsuario, pfSenhaI, pfSenhaII, tfOrientacao, tfTelefone, tfEmail};
 		for(TextField textField : listaFields) {
-			textField.setOnMouseClicked(e -> {
+			textField.setOnMouseClicked(_ -> {
 				lblSituacaoAtualizacao.setText("");
 			});
 		}
-		btConfimar.setOnAction(e -> {
+		btConfimar.setOnAction(_ -> {
 			usuario = Consulta.retornarUsuario(listaUsuario, mbtSelecao.getText());
 			vBoxTelaAtualizacaoII.setVisible(true);
 			tfNomeUsuario.setText(usuario.getNomeUsuario());
@@ -152,7 +152,7 @@ public class TelaAtualizarUsuario {
 			cbAdministrador.setSelected(usuario.isPermAdministrador());
 			cbUsuario.setSelected(usuario.isPermUsuario());
 		});
-		btDeletar.setOnAction(e ->{
+		btDeletar.setOnAction(_ ->{
 			DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 			String data = LocalDateTime.now().format(formato);
 			usuario.setIdUsuario(null);
@@ -160,7 +160,7 @@ public class TelaAtualizarUsuario {
 			fUsuario.alterarPlanilha(listaUsuario);
 			criarTelaAtualizacao(spSecundaria, listaUsuario, fUsuario);
 		});
-		btAtualizar.setOnAction(e ->{
+		btAtualizar.setOnAction(_ ->{
 			if(tfNomeUsuario.getText().isBlank() ||	tfTelefone.getText().isBlank() || tfEmail.getText().isBlank() ||
 					!cbUsuario.isSelected()) {
 				lblSituacaoAtualizacao.setText("Campo(s) vazio(s)!");

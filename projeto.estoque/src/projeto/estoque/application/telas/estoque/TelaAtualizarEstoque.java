@@ -85,7 +85,7 @@ public class TelaAtualizarEstoque {
 		for(Estoque estoqueAux : listaEstoque) {
 			if(estoqueAux.getIdEstoque() != null) {
 				MenuItem miEstoque = new MenuItem(estoqueAux.getNomeProduto());
-				miEstoque.setOnAction(e -> {mbtSelecao.setText(estoqueAux.getNomeProduto());});
+				miEstoque.setOnAction(_ -> {mbtSelecao.setText(estoqueAux.getNomeProduto());});
 				mbtSelecao.getItems().add(miEstoque);
 			}
 		}
@@ -164,23 +164,23 @@ public class TelaAtualizarEstoque {
 		btAtualizar.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
 
 		/*----------Inserindo Actions----------*/
-		spSecundaria.setOnMouseClicked(e -> {
+		spSecundaria.setOnMouseClicked(_ -> {
 			lblSituacaoAtualizacao.setText("");
 		});
 		TextField[] listaFields = {tfNomeProduto, tfCategoria, tfPericulosidadeOutros, tfLocalizacao, tfUnidadeMedida, tfEstoqueMinimo,
 				tfEstoque};
 		for(TextField tfAux : listaFields) {
-			tfAux.setOnAction(e -> {
+			tfAux.setOnAction(_ -> {
 				lblSituacaoAtualizacao.setText("");
 			});
 		}
 		for(MenuItem cmiAux : mbtPericulosidade.getItems()) {
-			cmiAux.setOnAction(e ->{
+			cmiAux.setOnAction(_ ->{
 				mbtPericulosidadeTipo.getItems().clear();
 				mbtPericulosidade.fire();
 			});
 		}
-		mbtPericulosidade.setOnAction(e ->{
+		mbtPericulosidade.setOnAction(_ ->{
 			List<String> listaTexto = new ArrayList<>();
 
 			if(cmiPerigoNenhum.isSelected()) {
@@ -214,7 +214,7 @@ public class TelaAtualizarEstoque {
 				cmiAux.getStyleClass().addAll("fonte-geral", "bold");
 				cmiAux.setStyle("-fx-padding: 5px 15px;");
 
-				cmiAux.setOnAction(f -> {
+				cmiAux.setOnAction(_ -> {
 					mbtPericulosidadeTipo.fire();
 				});
 			}
@@ -225,7 +225,7 @@ public class TelaAtualizarEstoque {
 			texto = texto.replace("]", "");
 			mbtPericulosidade.setText(texto);
 		});
-		mbtPericulosidadeTipo.setOnAction(e -> {
+		mbtPericulosidadeTipo.setOnAction(_ -> {
 			boolean selecionado = false;
 			for(MenuItem miAux : mbtPericulosidadeTipo.getItems()) {
 				if(((CheckMenuItem) miAux).isSelected()) {
@@ -238,7 +238,7 @@ public class TelaAtualizarEstoque {
 				mbtPericulosidadeTipo.setText("");
 			}
 		});
-		btConfimar.setOnAction(e -> {
+		btConfimar.setOnAction(_ -> {
 			item = Consulta.retornarEstoque(listaEstoque, mbtSelecao.getText());
 			vBoxTelaAtualizacaoII.setVisible(true);
 			tfNomeProduto.setText(item.getNomeProduto());
@@ -250,13 +250,13 @@ public class TelaAtualizarEstoque {
 			atualizarSelecaoPericulosidadeGeral(item, mbtPericulosidade);
 			atualizarSelecaoPericulosidadeEspecifica(item, tfPericulosidadeOutros, mbtPericulosidadeTipo);
 		});
-		btDeletar.setOnAction(e -> {
+		btDeletar.setOnAction(_ -> {
 			item.setIdEstoque(null);
 			fileEstoque.alterarPlanilha(listaEstoque);
 			listaEstoque.remove(item);
 			criarTelaAtualizacao(spSecundaria, listaEstoque, fileEstoque, usuario);
 		});
-		btAtualizar.setOnAction(e -> {
+		btAtualizar.setOnAction(_ -> {
 			DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 			String data = LocalDateTime.now().format(formato);
 			if(tfNomeProduto.getText().isBlank() || tfCategoria.getText().isBlank() || mbtPericulosidade.getText().isBlank() ||

@@ -146,17 +146,17 @@ public class TelaCadastroEstoque {
 		TextField[] listaFields = {tfNomeProduto, tfCategoria, tfPericulosidadeOutros, tfLocalizacao, tfUnidadeMedida, tfEstoqueMinimo,
 				tfEstoque};
 		for(TextField tfAux : listaFields) {
-			tfAux.setOnAction(e -> {
+			tfAux.setOnAction(_ -> {
 				lblSituacaoCadastro.setText("");
 			});
 		}
 		for(MenuItem cmiAux : mbtPericulosidade.getItems()) {
-			cmiAux.setOnAction(e ->{
+			cmiAux.setOnAction(_ ->{
 				mbtPericulosidadeTipo.getItems().clear();
 				mbtPericulosidade.fire();
 			});
 		}
-		mbtPericulosidade.setOnAction(e ->{
+		mbtPericulosidade.setOnAction(_ ->{
 			List<String> listaTexto = new ArrayList<>();
 
 			if(cmiPerigoNenhum.isSelected()) {
@@ -190,7 +190,7 @@ public class TelaCadastroEstoque {
 				cmiAux.getStyleClass().addAll("fonte-geral", "bold");
 				cmiAux.setStyle("-fx-padding: 5px 15px;");
 
-				cmiAux.setOnAction(f -> {
+				cmiAux.setOnAction(_ -> {
 					mbtPericulosidadeTipo.fire();
 				});
 			}
@@ -201,7 +201,7 @@ public class TelaCadastroEstoque {
 			texto = texto.replace("]", "");
 			mbtPericulosidade.setText(texto);
 		});
-		mbtPericulosidadeTipo.setOnAction(e -> {
+		mbtPericulosidadeTipo.setOnAction(_ -> {
 			boolean selecionado = false;
 			for(MenuItem miAux : mbtPericulosidadeTipo.getItems()) {
 				if(((CheckMenuItem) miAux).isSelected()) {
@@ -214,7 +214,7 @@ public class TelaCadastroEstoque {
 				mbtPericulosidadeTipo.setText("");
 			}
 		});
-		btLimpar.setOnAction(e ->{
+		btLimpar.setOnAction(_ ->{
 			tfNomeProduto.setText("");
 			tfCategoria.setText("");
 			tfPericulosidadeOutros.setText("");
@@ -229,7 +229,7 @@ public class TelaCadastroEstoque {
 
 			lblSituacaoCadastro.setText("Campos Limpos");
 		});
-		btCadastrar.setOnAction(e -> {
+		btCadastrar.setOnAction(_ -> {
 			DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 			String data = LocalDateTime.now().format(formato);
 			Estoque item = new Estoque();

@@ -78,7 +78,7 @@ public class TelaDeclararUso {
 		for(Estoque estoqueAux : listaEstoque) {
 			if(estoqueAux.getIdEstoque() != null) {
 				MenuItem miEstoque = new MenuItem(estoqueAux.getNomeProduto());
-				miEstoque.setOnAction(e -> {mbtSelecao.setText(estoqueAux.getNomeProduto());});
+				miEstoque.setOnAction(_ -> {mbtSelecao.setText(estoqueAux.getNomeProduto());});
 				mbtSelecao.getItems().add(miEstoque);
 			}
 		}
@@ -130,13 +130,13 @@ public class TelaDeclararUso {
 		btDeclararUso.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
 
 		/*----------Inserindo Actions----------*/
-		spSecundaria.setOnMouseClicked(e -> {
+		spSecundaria.setOnMouseClicked(_ -> {
 			lblSituacaoDeclararUso.setText("");
 		});
-		tfDeclararUso.setOnAction(e -> {
+		tfDeclararUso.setOnAction(_ -> {
 			lblSituacaoDeclararUso.setText("");
 		});
-		btConfimar.setOnAction(e -> {
+		btConfimar.setOnAction(_ -> {
 			item = Consulta.retornarEstoque(listaEstoque, mbtSelecao.getText());
 			vBoxTelaAtualizacaoII.setVisible(true);
 			lblIDProdutoII.setText(item.getIdEstoque());
@@ -151,7 +151,7 @@ public class TelaDeclararUso {
 				btDeclararUso.fire();
 			}
 		});
-		btDeclararUso.setOnAction(e -> {
+		btDeclararUso.setOnAction(_ -> {
 			DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 			String data = LocalDateTime.now().format(formato);
 			if(DadosInseridos.corrigirDouble(tfDeclararUso.getText()) == 0) {

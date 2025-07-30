@@ -97,7 +97,7 @@ public class TelaLogin {
 				btLogin.fire();
 			}
 		});
-		btLogin.setOnAction(e -> {
+		btLogin.setOnAction(_ -> {
 			spInicial.setCursor(Cursor.WAIT);
 			btLogin.setCursor(Cursor.WAIT);
 			lblSituacao.setText("");

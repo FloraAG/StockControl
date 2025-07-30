@@ -71,7 +71,7 @@ public class TelaConsultaLogs {
 					MenuItem miAux = new MenuItem(dataAux);
 					miAux.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral");
 					miAux.setStyle("-fx-padding: 5px 20px;");
-					miAux.setOnAction(e -> mbtSelecao.setText(dataAux));
+					miAux.setOnAction(_ -> mbtSelecao.setText(dataAux));
 					mbtSelecao.getItems().add(miAux);
 					ultimaData = dataAux;
 				}
@@ -79,7 +79,7 @@ public class TelaConsultaLogs {
 		}
 		Button btDeletar = new Button("Deletar Registros");
 		btDeletar.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
-		btDeletar.setOnAction(e -> {
+		btDeletar.setOnAction(_ -> {
 			String data = mbtSelecao.getText();
 			for(Logs logs : listaLogs) {
 				if(logs.getIdData() != null &&
@@ -162,7 +162,7 @@ public class TelaConsultaLogs {
 		TableColumn<Logs, Double> columnQuantidadeUtilizada = new TableColumn<>("Quantidade Utilizada");
 		columnQuantidadeUtilizada.setCellValueFactory(new PropertyValueFactory<>("quantidadeUtilizada"));
 		columnQuantidadeUtilizada.setPrefWidth(columnQuantidadeUtilizada.getText().length() * 10);
-		columnQuantidadeUtilizada.setCellFactory(numero -> new TableCell<Logs, Double>(){
+		columnQuantidadeUtilizada.setCellFactory(_ -> new TableCell<Logs, Double>(){
 			@Override
 			protected void updateItem(Double item, boolean empty) {
 				super.updateItem(item, empty);
