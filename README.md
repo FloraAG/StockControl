@@ -66,22 +66,22 @@
       Estoque Atual: 10 (frascos) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de frascos.\
       Quantidade Utilizada: 0.05 (litro) - nesse exemplo hipotético, o usuário utilizou 50ml de um frasco de 1 litro de álcool etílico, dessa forma:
       
-                                                           1 frasco  ------------ 1000ml
-                                                               x      ----------   50ml
+                                          1 frasco  ------------ 1000ml
+                                             x      ----------   50ml
    3. Item: Caixa Caneta Esferográfica Azul\
       Unidade de Medida: caixa(100uni)\
       Estoque Atual: 5 (caixas) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de caixas.\
       Quantidade Utilizada: 0,10 (caixa) - nesse exemplo hipotético, o usuário utilizou 10 unidades de uma caixa de 100 unidades, dessa forma:
 
-                                                            1 caixa  ------------ 100uni
-                                                                x      ---------  10uni
+                                          1 caixa  ------------ 100uni
+                                             x      ---------  10uni
    4. Item: Frasco Álcool Etílico 1L\
       Unidade de Medida: litro\
       Estoque Atual: 10 (litros) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade de litros.\
       Quantidade Utilizada: 0.05 (litro) - nesse exemplo hipotético, o usuário utilizou 50ml de um frasco de 1 litro de álcool etílico, dessa forma:
       
-                                                             1 L  ------------ 1000ml
-                                                             x    ----------   50ml
+                                          1 L  ------------ 1000ml
+                                           x    ----------   50ml
    5. Item: Caixa Caneta Esferográfica Azul 100uni\
       Unidade de Medida: unidade\
       Estoque Atual: 500 (unidades) - na tela aparecerá somente o numero, ficando subentendido que o número refere-se a quantidade unitária do item.\
