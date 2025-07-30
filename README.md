@@ -28,7 +28,7 @@
 ### Primeira Inicialização
 
 1. Inicie o programa com duplo clique. Serão criadas: a pasta "planilhas" e os arquivos excel "Estoque.xlsx", "Logs.xlsx" e "Usuários.xls";
-2. Na tela Login, digite "administrador" no campo usuário e a senha fornecida (entre em contato com o suporte para alteração da senha) no campo senha - essa será a mesma senha que abrirá as planilhas excel;
+2. Na tela Login, digite "administrador" no campo usuário e a senha "Definir a senha" com os espaços (entre em contato com o suporte para alteração dessaa senha) no campo senha - essa será a mesma senha que abrirá as planilhas excel;
 3. A interface Administração aparecerá na tela, contendo: na parte superior, "Olá, ADMINISTRADOR  Sair", e na parte central esquerda, quatro seções (Home, Cadastro, Consulta, Atualização de Dados) que deverão ser selecionadas conforme necessário:
    * A Seção Home proverá duas tabelas com dados dos itens que estejam próximo do valor mínimo estipulado ou abaixo desse valor;
    * A Seção Cadastro proverá campos de texto, quais, deverão ser preenchidos e utilizados no cadastro de novos usuários. Perceba-se que o campo de Orientação é opcional. A senha do usuário cadastrado será criptografada e armazenada na planilha. Usuários com permissão de administrador terão privilégios para acessar a própria interface Administração e a interface Estoque, podendo cadastrar e manipular itens do estoque;
@@ -91,7 +91,7 @@
    
 ## Problemas Conhecidos
 
-O programa não permite a redefinição da senha do administrador e não possui suporte para a edição direta das planilhas excel, afim de evitar a corrupção dos arquivos e o livre acesso (a senha deve ser modificada previamente a insatalação do programa pelo suporte).
+O programa não permite a redefinição da senha do administrador e não possui suporte para a edição direta das planilhas excel, afim de evitar a corrupção dos arquivos e o livre acesso (a senha deve ser modificada previamente a instalação do programa pelo suporte).
 
 ## Créditos
 
