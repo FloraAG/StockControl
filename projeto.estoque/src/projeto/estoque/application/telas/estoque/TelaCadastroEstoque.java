@@ -121,7 +121,7 @@ public class TelaCadastroEstoque {
 		tfCategoria.getStyleClass().addAll("fonte-geral", "fundo-obj-geral", "borda");
 		tfCategoria.setPrefWidth(width * 0.2);
 		tfPericulosidadeOutros.getStyleClass().addAll("fonte-geral", "fundo-obj-geral", "borda");
-		tfPericulosidadeOutros.setPrefWidth(width * 0.58);
+		tfPericulosidadeOutros.setPrefWidth(width * 0.54);
 		tfLocalizacao.getStyleClass().addAll("fonte-geral", "fundo-obj-geral", "borda");
 		tfLocalizacao.setPrefWidth(width * 0.2);
 		ttEstoque.getStyleClass().addAll("fundo-obj-geral", "white-full", "borda", "tooltip");
@@ -134,10 +134,10 @@ public class TelaCadastroEstoque {
 		/*-----Menu-----*/
 		mbtPericulosidade.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "white-full");
 		mbtPericulosidade.setStyle("-fx-padding: 0 0 0 0");
-		mbtPericulosidade.setPrefWidth(width * 0.16);
+		mbtPericulosidade.setPrefWidth(width * 0.13);
 		mbtPericulosidadeTipo.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "white-full");
 		mbtPericulosidadeTipo.setStyle("-fx-padding: 0 0 0 0");
-		mbtPericulosidadeTipo.setPrefWidth(width * 0.21);
+		mbtPericulosidadeTipo.setPrefWidth(width * 0.19);
 		/*-----Botões-----*/
 		btLimpar.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
 		btCadastrar.getStyleClass().addAll("fonte-geral", "bold", "fundo-obj-geral", "borda", "greenII");
@@ -310,9 +310,9 @@ public class TelaCadastroEstoque {
 		hBoxNomeProduto.getChildren().addAll(lblNomeProduto, tfNomeProduto);
 		hBoxCategoria.getChildren().addAll(lblCategoria, tfCategoria);
 		hBoxPericulosidade.getChildren().addAll(lblPericulosidade, mbtPericulosidade, lblPericulosidadeTipo, mbtPericulosidadeTipo);
-		hBoxPericulosidade.setAlignment(Pos.CENTER_LEFT);
+		hBoxPericulosidade.setAlignment(Pos.CENTER);
 		hBoxPericulosidadeOutros.getChildren().addAll(lblPericulosidadeOutros, tfPericulosidadeOutros);
-		hBoxPericulosidadeOutros.setAlignment(Pos.CENTER_LEFT);
+		hBoxPericulosidadeOutros.setAlignment(Pos.CENTER);
 		hBoxLocalUnidadeMedida.getChildren().addAll(lblLocalizacao, tfLocalizacao, lblUnidadeMedida, tfUnidadeMedida);
 		hBoxQuantidade.getChildren().addAll(lblEstoqueMinimo, tfEstoqueMinimo, lblEstoque, tfEstoque);
 		hBoxBotoes.getChildren().addAll(btLimpar, btCadastrar);

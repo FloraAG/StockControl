@@ -199,7 +199,7 @@ public class FileUsuario implements FileCRUD<Usuario> {
 		cell.setCellValue("ADMINISTRADOR");
 		//Coluna 2
 		cell = linha.createCell(2);
-		cell.setCellValue(CriptografiaSenha.criptografarSenha("Definir a senha"));
+		cell.setCellValue(CriptografiaSenha.criptografarSenha("admin"));
 		//Coluna 3
 		cell = linha.createCell(3);
 		cell.setBlank();
@@ -273,7 +273,7 @@ public class FileUsuario implements FileCRUD<Usuario> {
 		try {
 			//Variáveis Execel
 			final FileInputStream fis = new FileInputStream("planilhas/Usuários.xlsx");
-			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(fis, "Definir a senha");
+			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(fis, "admin");
 
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			XSSFRow linha;

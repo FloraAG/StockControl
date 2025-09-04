@@ -230,7 +230,7 @@ public class FileEstoque implements FileCRUD<Estoque>{
 		try {
 			//Variáveis Execel
 			final FileInputStream fis = new FileInputStream("planilhas/Estoque.xlsx");
-			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(fis, "Definir a senha");
+			XSSFWorkbook workbook = (XSSFWorkbook) WorkbookFactory.create(fis, "admin");
 			XSSFSheet sheet = workbook.getSheetAt(0);
 			XSSFRow linha;
 			XSSFCell cell;
